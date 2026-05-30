@@ -1,26 +1,205 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* === BACKGROUNDS === */
+  --color-void: #080706;
+  /* Deepest bg — used for body, hero sections */
+  --color-tomb: #0E0C0A;
+  /* Primary surface */
+  --color-chamber: #141210;
+  /* Elevated surfaces (cards, panels) */
+  --color-alcove: #1C1916;
+  /* Hover states, selected items */
+  --color-dust: #252018;
+  /* Borders, separators */
+
+  /* === GOLD SPECTRUM === */
+  --color-gold-pale: #F5E6C8;
+  /* Body text on dark — warm off-white */
+  --color-gold-mist: #D4AF6A;
+  /* Secondary text, captions, labels */
+  --color-gold-true: #C9943A;
+  /* Primary accent — links, active states */
+  --color-gold-rich: #A0722A;
+  /* Hover accent, pressed states */
+  --color-gold-deep: #6B4A18;
+  /* Subtle borders, decorative lines */
+
+  /* === BRONZE SPECTRUM === */
+  --color-bronze-light: #B87C4A;
+  /* Secondary accent — dynasty badges, tags */
+  --color-bronze-mid: #8B5E34;
+  /* Inactive elements */
+  --color-bronze-dark: #5C3D1E;
+  /* Deep bronze for texture overlays */
+
+  /* === SEMANTIC === */
+  --color-text-primary: var(--color-gold-pale);
+  --color-text-secondary: var(--color-gold-mist);
+  --color-text-muted: #6B5F4A;
+  --color-border-default: var(--color-dust);
+  --color-border-accent: var(--color-gold-deep);
+  --color-surface-1: var(--color-tomb);
+  --color-surface-2: var(--color-chamber);
+  --color-surface-3: var(--color-alcove);
+  --color-accent: var(--color-gold-true);
+  --color-accent-hover: var(--color-gold-rich);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+@theme {
+  /* Color Overrides */
+  --color-void: var(--color-void);
+  --color-tomb: var(--color-tomb);
+  --color-chamber: var(--color-chamber);
+  --color-alcove: var(--color-alcove);
+  --color-dust: var(--color-dust);
+
+  --color-gold-pale: var(--color-gold-pale);
+  --color-gold-mist: var(--color-gold-mist);
+  --color-gold-true: var(--color-gold-true);
+  --color-gold-rich: var(--color-gold-rich);
+  --color-gold-deep: var(--color-gold-deep);
+
+  --color-bronze-light: var(--color-bronze-light);
+  --color-bronze-mid: var(--color-bronze-mid);
+  --color-bronze-dark: var(--color-bronze-dark);
+
+  --color-text-primary: var(--color-text-primary);
+  --color-text-secondary: var(--color-text-secondary);
+  --color-text-muted: var(--color-text-muted);
+  --color-border-default: var(--color-border-default);
+  --color-border-accent: var(--color-border-accent);
+  --color-surface-1: var(--color-surface-1);
+  --color-surface-2: var(--color-surface-2);
+  --color-surface-3: var(--color-surface-3);
+  --color-accent: var(--color-accent);
+  --color-accent-hover: var(--color-accent-hover);
+
+  /* Fonts */
+  --font-display: var(--font-display), Georgia, serif;
+  --font-sc: var(--font-sc), Georgia, serif;
+  --font-body: var(--font-body), "Times New Roman", serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+/* Custom base styles */
+html,
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--color-void);
+  color: var(--color-gold-pale);
+  font-family: var(--font-body), serif;
+  overflow-x: hidden;
+  min-height: 100%;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-tomb);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-gold-deep);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-gold-true);
+}
+
+/* Text Selection */
+::selection {
+  background-color: rgba(201, 148, 58, 0.25);
+  color: var(--color-gold-pale);
+}
+
+/* Radial luxury glow */
+.hero-glow {
+  background: radial-gradient(ellipse at 50% 60%, rgba(201, 148, 58, 0.06) 0%, transparent 70%);
+}
+
+/* Typography styles matching specification scale */
+.text-display-2xl {
+  font-family: var(--font-display);
+  font-size: clamp(3rem, 7vw, 96px);
+  line-height: 0.97;
+  letter-spacing: -0.03em;
+}
+
+.text-display-xl {
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 5.5vw, 72px);
+  line-height: 1.0;
+  letter-spacing: -0.025em;
+}
+
+.text-display-lg {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4.5vw, 56px);
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+}
+
+.text-display-md {
+  font-family: var(--font-display);
+  font-size: clamp(1.75rem, 3.5vw, 42px);
+  line-height: 1.1;
+  letter-spacing: -0.015em;
+}
+
+.text-display-sm {
+  font-family: var(--font-display);
+  font-size: clamp(1.5rem, 2.5vw, 32px);
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+}
+
+.text-lead {
+  font-family: var(--font-body);
+  font-size: 22px;
+  line-height: 1.4;
+  letter-spacing: 0em;
+}
+
+.text-body {
+  font-family: var(--font-body);
+  font-size: 18px;
+  line-height: 1.65;
+  letter-spacing: 0.01em;
+}
+
+.text-caption {
+  font-family: var(--font-body);
+  font-size: 15px;
+  line-height: 1.7;
+  letter-spacing: 0.02em;
+}
+
+.text-meta {
+  font-family: var(--font-sc);
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.08em;
+}
+
+.font-sc-custom {
+  font-family: var(--font-sc);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+/* Hide scrollbars but keep functionality */
+.no-scrollbar {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+  /* Chrome, Safari and Opera */
 }

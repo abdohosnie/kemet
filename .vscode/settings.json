@@ -1,0 +1,62 @@
+{
+    "workbench.colorTheme": "One Dark Pro Darker",
+    "editor.fontFamily": "JetBrains Mono",
+    "editor.cursorBlinking": "smooth",
+    "editor.cursorSmoothCaretAnimation": "on",
+    "editor.smoothScrolling": true,
+    "editor.minimap.enabled": true,
+    // --- Code Visualization & Clean UI ---
+    "editor.bracketPairColorization.enabled": true,
+    "editor.guides.bracketPairs": "active",
+    "editor.stickyScroll.enabled": true,
+    "editor.fontLigatures": true,
+    "editor.minimap.renderCharacters": false,
+    // --- Auto-Save & Formatting Architecture ---
+    "editor.formatOnSave": true,
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true,
+    "editor.linkedEditing": true,
+    // --- Development File Adjustments ---
+    "explorer.confirmDragAndDrop": false,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    // --- Enable & Maximize Rich Text Styling ---
+    "editor.semanticHighlighting.enabled": true,
+    "css.lint.unknownAtRules": "ignore",
+    "editor.dragAndDrop": false,
+    "editor.quickSuggestions": {
+        "strings": true
+    },
+    "workbench.editor.closeOnFileDelete": true,
+    "files.watcherExclude": {
+        "**/.git/objects/**": true,
+        "**/.git/subtree-cache/**": true,
+        "**/node_modules/*/**": true,
+        "**/.next/**": true
+    },
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            {
+                "scope": [
+                    "keyword.control",
+                    "keyword.operator.new",
+                    "storage.type",
+                    "storage.modifier"
+                ],
+                "settings": {
+                    "fontStyle": "bold"
+                }
+            },
+            {
+                "scope": [
+                    "entity.name.tag",
+                    "entity.name.type.class",
+                    "support.class.component"
+                ],
+                "settings": {
+                    "fontStyle": "bold"
+                }
+            }
+        ]
+    }
+}
