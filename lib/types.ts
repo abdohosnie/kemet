@@ -56,6 +56,11 @@ export interface Pharaoh {
   epithet: string       // e.g. "The Great" / "Builder of Pyramids"
   biography: string     // Full narrative — 4–8 paragraphs
   keyAchievements: string[]
+
+  // High-Performance Graphics Strategy
+  cartoucheSigns: string[]  // Alphanumeric Gardiner Sign List keys e.g., ["N5", "L1", "N35"]
+  unicodeGlyphs?: string    // Optional plaintext string fallback strictly for accessibility/copy metadata [e.g., "𓇋𓆗𓈖"]
+
   majorProjects: Monument[]
   artifacts: Artifact[]
   portraitImageUrl: string

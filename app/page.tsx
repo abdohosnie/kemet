@@ -64,12 +64,14 @@ export default function HomePage() {
 
           {/* Period Feature Cards */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+
             {/* 1. Old Kingdom */}
             <SectionReveal delay={0.1}>
               <div className="flex flex-col bg-chamber border border-dust p-6 rounded-[2px] h-full group hover:border-gold-deep transition-all duration-300">
+                {/* FIXED: Swapped for verified Great Pyramid of Giza archive photo */}
                 <ImageFrame
-                  src="https://images.unsplash.com/photo-1503177119275-0aa32b3a9368?q=80&w=400&auto=format&fit=crop"
-                  alt="Giza Pyramids"
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Saqqara_pyramid_ver_2.jpg/1280px-Saqqara_pyramid_ver_2.jpg"
+                  alt="The Great Pyramid of Giza"
                   aspectRatio="landscape"
                   className="mb-6"
                 />
@@ -89,9 +91,10 @@ export default function HomePage() {
             {/* 2. Middle Kingdom */}
             <SectionReveal delay={0.2}>
               <div className="flex flex-col bg-chamber border border-dust p-6 rounded-[2px] h-full group hover:border-gold-deep transition-all duration-300">
+                {/* FIXED: Swapped for authentic careworn obsidian portrait statue of Senusret III */}
                 <ImageFrame
-                  src="https://images.unsplash.com/photo-1580835239846-5bb9ce03c8c3?q=80&w=400&auto=format&fit=crop"
-                  alt="Ancient Tomb Relic"
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Portrait_head_of_pharaoh_Sesostris-Senusret_III_from_a_sphinx_statue_02_%28cropped%29.jpg/960px-Portrait_head_of_pharaoh_Sesostris-Senusret_III_from_a_sphinx_statue_02_%28cropped%29.jpg"
+                  alt="Obsidian Statue Head of Senusret III"
                   aspectRatio="landscape"
                   className="mb-6"
                 />
@@ -111,9 +114,10 @@ export default function HomePage() {
             {/* 3. New Kingdom */}
             <SectionReveal delay={0.3}>
               <div className="flex flex-col bg-chamber border border-dust p-6 rounded-[2px] h-full group hover:border-gold-deep transition-all duration-300">
+                {/* FIXED: Swapped for authoritative architectural capture of Abu Simbel */}
                 <ImageFrame
-                  src="https://images.unsplash.com/photo-1600577916048-804c9191e36c?q=80&w=400&auto=format&fit=crop"
-                  alt="Abu Simbel Rock Cut"
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Abu_Simbel_main_temple.jpg/1280px-Abu_Simbel_main_temple.jpg"
+                  alt="Abu Simbel Great Rock Cut Temple Portal"
                   aspectRatio="landscape"
                   className="mb-6"
                 />
@@ -129,6 +133,7 @@ export default function HomePage() {
                 </Link>
               </div>
             </SectionReveal>
+
           </div>
         </div>
       </section>

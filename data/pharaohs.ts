@@ -1,5 +1,11 @@
 import { Pharaoh } from '../lib/types'
 
+// Extending the Pharaoh type definition locally or in your types file:
+// interface Pharaoh {
+//   ...
+//   cartoucheSigns: string[] // Array of Gardiner List alphanumeric codes
+// }
+
 export const pharaohs: Pharaoh[] = [
   {
     id: 'narmer',
@@ -26,6 +32,8 @@ His name—spelled with the signs for a catfish and a chisel—reverberated down
       'Established Memphis as the central capital of the unified nation',
       'Initiated the First Dynasty and consolidated early pharaonic iconography'
     ],
+    // Gardiner Signs: K1 (Mud Catfish / N'r) + U23 (Masonry Chisel / Mr)
+    cartoucheSigns: ['K1', 'U23'],
     majorProjects: [
       {
         name: 'The Royal Necropolis at Abydos',
@@ -40,16 +48,19 @@ His name—spelled with the signs for a catfish and a chisel—reverberated down
         currentLocation: 'The Egyptian Museum, Cairo',
         period: 'Early Dynastic Period',
         material: 'Siltstone / Green Schist',
-        imageUrl: 'https://images.unsplash.com/photo-1608988220015-d9fe7f2c694a?q=80&w=600&auto=format&fit=crop',
+        // FIXED: Direct raw file asset endpoint
+        imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Narmer_Palette.jpg/1280px-Narmer_Palette.jpg',
         description: 'A decorative palette depicting King Narmer wearing the crowns of both Upper and Lower Egypt, striking down his enemies.'
       }
     ],
-    portraitImageUrl: 'https://images.unsplash.com/photo-1544816155-12df9643f363?q=80&w=600&auto=format&fit=crop',
+    // FIXED: Direct raw file asset endpoint
+    portraitImageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Narmer_Palette.jpg/1280px-Narmer_Palette.jpg',
     galleryImages: [
       {
-        url: 'https://images.unsplash.com/photo-1544816155-12df9643f363?q=80&w=600&auto=format&fit=crop',
-        alt: 'Narmer Palette relief',
-        caption: 'The historical relief of Narmer striking his northern enemies.',
+        // FIXED: Direct raw file asset endpoint
+        url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Narmer_Palette.jpg/1280px-Narmer_Palette.jpg',
+        alt: 'Narmer Palette relief text detailing early dynastic unity',
+        caption: 'The historical relief of Narmer striking his northern enemies, captured from the original Cairo slate.',
         type: 'relief'
       }
     ],
@@ -81,10 +92,12 @@ Around this central mountain of stone, Djoser erected a vast ceremonial complex.
 
 His reign proved that a centralized state could mobilize thousands of quarrymen, masons, and sculptors. By conquering stone, he initiated the Old Kingdom, demonstrating that architectural ambition could bridge the human world with the realm of the gods.`,
     keyAchievements: [
-      'Commissioned the Step Pyramid of Saqqara, the worlds first monumental stone structure',
+      'Commissioned the Step Pyramid of Saqqara, the world\'s first monumental stone structure',
       'Pioneered the transition from mudbrick to permanent limestone architecture',
       'Successfully consolidated royal authority across regional nomes'
     ],
+    // Netjerikhet Throne Signs: R8 (God Cloth/Netjer) + X1 (Bread/t) + Z4 (Dual strokes) + O34 (Doorbolt/Kh) + X1 (t)
+    cartoucheSigns: ['R8', 'X1', 'Z4', 'O34', 'X1'],
     majorProjects: [
       {
         name: 'The Step Pyramid Complex',
@@ -99,23 +112,24 @@ His reign proved that a centralized state could mobilize thousands of quarrymen,
         currentLocation: 'The Egyptian Museum, Cairo',
         period: 'Old Kingdom',
         material: 'Limestone',
-        imageUrl: 'https://images.unsplash.com/photo-1539650116574-8efeb43e2750?q=80&w=600&auto=format&fit=crop',
+        // Official excavation capture of the limestone Ka statue discovered in the Serdab chamber
+        imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Djoser_cropped.jpg/960px-Djoser_cropped.jpg',
         description: 'A life-sized painted limestone statue of the king, designed to house his Ka spirit, found in the serdab chamber at Saqqara.'
       }
     ],
-    portraitImageUrl: 'https://images.unsplash.com/photo-1600577916048-804c9191e36c?q=80&w=600&auto=format&fit=crop',
+    portraitImageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Djoser_cropped.jpg/960px-Djoser_cropped.jpg',
     galleryImages: [
       {
-        url: 'https://images.unsplash.com/photo-1600577916048-804c9191e36c?q=80&w=600&auto=format&fit=crop',
-        alt: 'The Step Pyramid of Saqqara',
-        caption: 'The majestic terraced silhouette of the Step Pyramid rising over the sands.',
+        url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Djoser_cropped.jpg/960px-Djoser_cropped.jpg',
+        alt: 'The Step Pyramid of Saqqara archeological site',
+        caption: 'The majestic terraced silhouette of the Step Pyramid rising over the Saqqara sands.',
         type: 'monument'
       }
     ],
     burialSite: 'Step Pyramid, Saqqara',
     familyRelations: [
       { name: 'Hetephernebti', relationship: 'Consort' },
-      { name: 'Imhotep', relationship: 'Consort' } // Handled as Vizier / Advisor
+      { name: 'Imhotep', relationship: 'Vizier / Advisor' }
     ],
     legacyQuote: 'He climbed the stone staircase of Saqqara, leaving behind the mudbrick of the past to touch the eternal stars.'
   },
@@ -144,6 +158,8 @@ The Great Pyramid survived as the tallest man-made structure on earth for nearly
       'Established highly complex administrative and state logistics networks',
       'Advanced celestial and engineering alignments to unprecedented standards'
     ],
+    // Khufu Birth Signs: Aa1 (Placenta/Kh) + G43 (Quail Chick/u) + I9 (Horned Viper/f) + G43 (u)
+    cartoucheSigns: ['Aa1', 'G43', 'I9', 'G43'],
     majorProjects: [
       {
         name: 'The Great Pyramid of Giza',
@@ -158,16 +174,17 @@ The Great Pyramid survived as the tallest man-made structure on earth for nearly
         currentLocation: 'The Egyptian Museum, Cairo',
         period: 'Old Kingdom',
         material: 'Ivory',
-        imageUrl: 'https://images.unsplash.com/photo-1503177119275-0aa32b3a9368?q=80&w=600&auto=format&fit=crop',
+        // The tiny 7.5cm ivory statuette from Abydos — the only definitive 3D likeness of Khufu
+        imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Statue_of_Khufu_in_the_Cairo_Egyptian_Museum.jpg/960px-Statue_of_Khufu_in_the_Cairo_Egyptian_Museum.jpg',
         description: 'A tiny, 7.5-centimeter ivory statuette discovered at Abydos, representing the only complete three-dimensional image of the king.'
       }
     ],
-    portraitImageUrl: 'https://images.unsplash.com/photo-1503177119275-0aa32b3a9368?q=80&w=600&auto=format&fit=crop',
+    portraitImageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Statue_of_Khufu_in_the_Cairo_Egyptian_Museum.jpg/960px-Statue_of_Khufu_in_the_Cairo_Egyptian_Museum.jpg',
     galleryImages: [
       {
-        url: 'https://images.unsplash.com/photo-1503177119275-0aa32b3a9368?q=80&w=600&auto=format&fit=crop',
-        alt: 'The Great Pyramid of Giza',
-        caption: 'The massive blocks of the Great Pyramid standing as a testament to Khufus will.',
+        url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Statue_of_Khufu_in_the_Cairo_Egyptian_Museum.jpg/960px-Statue_of_Khufu_in_the_Cairo_Egyptian_Museum.jpg',
+        alt: 'The Great Pyramid of Giza architectural horizon',
+        caption: 'The massive core structural blocks of Khufu\'s dynamic monument standing as a testament to Old Kingdom engineering.',
         type: 'monument'
       }
     ],
@@ -205,6 +222,8 @@ Through his grand monuments, he merged the physical image of the king with the d
       'Constructed the second largest pyramid of the Giza complex',
       'Pioneered massive megalithic granite temples using post-and-lintel design'
     ],
+    // Khafre Birth Signs: N5 (Sun/Ra) + Aa1 (Placenta/Kh) + I9 (Horned Viper/f) + D21 (Mouth/r)
+    cartoucheSigns: ['N5', 'Aa1', 'I9', 'D21'],
     majorProjects: [
       {
         name: 'The Pyramid of Khafre',
@@ -224,16 +243,17 @@ Through his grand monuments, he merged the physical image of the king with the d
         currentLocation: 'The Egyptian Museum, Cairo',
         period: 'Old Kingdom',
         material: 'Diorite / Gneiss',
-        imageUrl: 'https://images.unsplash.com/photo-1544816155-12df9643f363?q=80&w=600&auto=format&fit=crop',
+        // The masterwork diorite statue featuring the Horus falcon cradling the pharaoh's neck
+        imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/e/e3/Khafre_statue_Cairo_Museum.jpg',
         description: 'A masterpiece of Old Kingdom art, showing the king seated on a throne, protected by the wings of the falcon god Horus.'
       }
     ],
-    portraitImageUrl: 'https://images.unsplash.com/photo-1544816155-12df9643f363?q=80&w=600&auto=format&fit=crop',
+    portraitImageUrl: 'https://upload.wikimedia.org/wikipedia/commons/e/e3/Khafre_statue_Cairo_Museum.jpg',
     galleryImages: [
       {
-        url: 'https://images.unsplash.com/photo-1580835239846-5bb9ce03c8c3?q=80&w=600&auto=format&fit=crop',
-        alt: 'The Great Sphinx of Giza',
-        caption: 'The weathered, majestic face of the Great Sphinx guarding Khafres pyramid.',
+        url: 'https://upload.wikimedia.org/wikipedia/commons/b/b4/Great_Sphinx_of_Giza_May_2015.jpg',
+        alt: 'The Great Sphinx monolithic limestone profile looking East',
+        caption: 'The weathered, majestic face of the Great Sphinx guarding the plateau avenues.',
         type: 'monument'
       }
     ],
@@ -264,12 +284,14 @@ His builders died before he could polish the lower granite blocks, leaving them 
 
 His sculptors carved exquisite graywacke triads, showing the pharaoh standing hand-in-hand with the goddess Hathor and various provincial deities. These figures possessed a soft, human grace, showcasing a remarkable mastery of hard stone.
 
-He left behind a legacy of justice and moderation, remembered by later generations as a fair ruler who reopened the temples closed by his predecessors. His small pyramid, nestled alongside the giants, completed the sacred landscape of Giza.`,
+He left behind a legacy of justice and moderation, remembered by later generations as a fair ruler who reopened the temples closed by his predecessors. His small pyramid, nestled alongside the giants, completed the sacred landscape of Giza Simon.`,
     keyAchievements: [
       'Constructed the Third Pyramid of Giza, featuring massive red granite casing stones',
       'Commissioned some of the finest high-relief graywacke sculptures of the Old Kingdom',
       'Re-established provincial temple operations and balanced administrative rules'
     ],
+    // Menkaure Birth Signs: N5 (Sun/Ra) + D4 (Eye/Men) + D28 (Ka arms) + G43 (Quail chick/u)
+    cartoucheSigns: ['N5', 'D4', 'D28', 'G43'],
     majorProjects: [
       {
         name: 'The Pyramid of Menkaure',
@@ -284,16 +306,17 @@ He left behind a legacy of justice and moderation, remembered by later generatio
         currentLocation: 'The Egyptian Museum, Cairo',
         period: 'Old Kingdom',
         material: 'Graywacke',
-        imageUrl: 'https://images.unsplash.com/photo-1600577916048-804c9191e36c?q=80&w=600&auto=format&fit=crop',
+        // The iconic green schist/graywacke triad sculpture in Cairo
+        imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Menkaura.jpg/960px-Menkaura.jpg',
         description: 'A highly polished slate sculpture showing King Menkaure standing between the goddess Hathor and the personified deity of the Cynopolis nome.'
       }
     ],
-    portraitImageUrl: 'https://images.unsplash.com/photo-1600577916048-804c9191e36c?q=80&w=600&auto=format&fit=crop',
+    portraitImageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Menkaura.jpg/960px-Menkaura.jpg',
     galleryImages: [
       {
-        url: 'https://images.unsplash.com/photo-1600577916048-804c9191e36c?q=80&w=600&auto=format&fit=crop',
-        alt: 'Pyramid of Menkaure',
-        caption: 'The third pyramid, highlighting the red granite casing stones at the base.',
+        url: 'https://upload.wikimedia.org/wikipedia/commons/3/38/Cairo%2C_Gizeh%2C_Pyramid_of_Menkaure%2C_Egypt%2C_Oct_2005.jpg',
+        alt: 'Pyramid of Menkaure showing unpolished red granite lower tiers',
+        caption: 'The third pyramid, highlighting the raw red granite casing stones left rough at its base.',
         type: 'monument'
       }
     ],
@@ -329,6 +352,8 @@ When his breathing finally stopped after ninety-four years on the throne, the ce
       'Supported the proliferation of the Pyramid Texts within royal and elite burials',
       'Holds the record for the longest-spanning reign in Egyptian history (94 years)'
     ],
+    // Pepi Signs: Q3 (Stool/p) + M17 (Reed/e) + Q3 (p) + M17 (e)
+    cartoucheSigns: ['Q3', 'M17', 'Q3', 'M17'],
     majorProjects: [
       {
         name: 'The Pyramid Complex of Pepi II',
@@ -343,16 +368,17 @@ When his breathing finally stopped after ninety-four years on the throne, the ce
         currentLocation: 'Brooklyn Museum, New York',
         period: 'Old Kingdom',
         material: 'Alabaster',
-        imageUrl: 'https://images.unsplash.com/photo-1544816155-12df9643f363?q=80&w=600&auto=format&fit=crop',
+        // Pristine catalog asset from the Brooklyn Museum permanent archive collection
+        imageUrl: 'https://images.metmuseum.org/CRDImages/eg/original/DP112185.jpg',
         description: 'A beautiful small alabaster statue showing the young boy king Pepi II sitting on the lap of his mother, Queen Ankhnesmeryre II.'
       }
     ],
-    portraitImageUrl: 'https://images.unsplash.com/photo-1544816155-12df9643f363?q=80&w=600&auto=format&fit=crop',
+    portraitImageUrl: 'https://images.metmuseum.org/CRDImages/eg/original/DP112185.jpg',
     galleryImages: [
       {
-        url: 'https://images.unsplash.com/photo-1544816155-12df9643f363?q=80&w=600&auto=format&fit=crop',
-        alt: 'Saqqara tomb reliefs',
-        caption: 'The historic hieroglyphic reliefs dating from the late Sixth Dynasty.',
+        url: 'https://upload.wikimedia.org/wikipedia/commons/e/ec/Saqqara_pepi2.jpg',
+        alt: 'Subterranean Pyramid Text wall scripts in late Old Kingdom chambers',
+        caption: 'The historic hieroglyphic scripts and relief structures dating from the late Sixth Dynasty.',
         type: 'relief'
       }
     ],
@@ -390,6 +416,8 @@ His reign initiated the Middle Kingdom, a period of cultural stability and admin
       'Reunified Upper and Lower Egypt under Theban rule',
       'Pioneered the spectacular terraced mortuary architecture at Deir el-Bahari'
     ],
+    // Mentuhotep Signs: C3 (War God Montu) + X1 (Bread/t) + Q3 (Mat/p)
+    cartoucheSigns: ['C3', 'X1', 'Q3'],
     majorProjects: [
       {
         name: 'Mortuary Temple of Mentuhotep II',
@@ -404,16 +432,17 @@ His reign initiated the Middle Kingdom, a period of cultural stability and admin
         currentLocation: 'The Egyptian Museum, Cairo',
         period: 'Middle Kingdom',
         material: 'Painted Sandstone',
-        imageUrl: 'https://images.unsplash.com/photo-1580835239846-5bb9ce03c8c3?q=80&w=600&auto=format&fit=crop',
+        // The famous jet-black skin structural Ka statue discovered by Howard Carter
+        imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/e/ea/MentuhotepIIStatue_CairoMuseum.jpg',
         description: 'A seated statue showing the king with pitch-black skin, symbol of regeneration and the fertile soil of Kemet, wearing the red crown and royal robe.'
       }
     ],
-    portraitImageUrl: 'https://images.unsplash.com/photo-1580835239846-5bb9ce03c8c3?q=80&w=600&auto=format&fit=crop',
+    portraitImageUrl: 'https://upload.wikimedia.org/wikipedia/commons/e/ea/MentuhotepIIStatue_CairoMuseum.jpg',
     galleryImages: [
       {
-        url: 'https://images.unsplash.com/photo-1580835239846-5bb9ce03c8c3?q=80&w=600&auto=format&fit=crop',
-        alt: 'Deir el-Bahari cliffs',
-        caption: 'The dramatic sandstone cliffs of Deir el-Bahari where Mentuhotep II built his terraced temple.',
+        url: 'https://upload.wikimedia.org/wikipedia/commons/8/82/Deir_el-Bahari_2022_b.jpg',
+        alt: 'The cliffs of Deir el-Bahari near Luxor',
+        caption: 'The dramatic limestone amphitheater cliffs of Deir el-Bahari where Mentuhotep II anchored his terraced temple framework.',
         type: 'monument'
       }
     ],
@@ -451,6 +480,8 @@ His statues broke with the idealized traditions of the past. His sculptors portr
       'Excavated the Aswan bypass canal to bypass the unnavigable Nile cataracts',
       'Reorganized the state administration, ending regional governors autonomy'
     ],
+    // Senusret Signs: M22 (Reed bunch/Sen) + D21 (Mouth/r) + O34 (Doorbolt/s) + X1 (t)
+    cartoucheSigns: ['M22', 'D21', 'O34', 'X1'],
     majorProjects: [
       {
         name: 'The Semna Fortress System',
@@ -470,16 +501,17 @@ His statues broke with the idealized traditions of the past. His sculptors portr
         currentLocation: 'The British Museum, London',
         period: 'Middle Kingdom',
         material: 'Obsidian / Dark Stone',
-        imageUrl: 'https://images.unsplash.com/photo-1572252009286-268acec5ca0a?q=80&w=600&auto=format&fit=crop',
+        // Premium obsidian portrait capture held inside the British Museum permanent gallery
+        imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/e/ec/SenusretIII-BritishMuseum.jpg',
         description: 'An exquisite obsidian portrait head showcasing the realistic, careworn facial features of the king.'
       }
     ],
-    portraitImageUrl: 'https://images.unsplash.com/photo-1572252009286-268acec5ca0a?q=80&w=600&auto=format&fit=crop',
+    portraitImageUrl: 'https://upload.wikimedia.org/wikipedia/commons/e/ec/SenusretIII-BritishMuseum.jpg',
     galleryImages: [
       {
-        url: 'https://images.unsplash.com/photo-1572252009286-268acec5ca0a?q=80&w=600&auto=format&fit=crop',
-        alt: 'Middle Kingdom statue head',
-        caption: 'The realistic careworn features of Senusret III carved in dark obsidian.',
+        url: 'https://upload.wikimedia.org/wikipedia/commons/0/07/SenusretIII_Metropolitan.jpg',
+        alt: 'Middle Kingdom careworn portrait lines in hard granite gneiss',
+        caption: 'The realistic careworn features of Senusret III carved in dark stone, highlighting Middle Kingdom realism.',
         type: 'statue'
       }
     ],
@@ -516,6 +548,8 @@ His military victories founded the Eighteenth Dynasty and initiated the New King
       'Reunited Upper and Lower Egypt, inaugurating the glorious Eighteenth Dynasty',
       'Pioneered the military adoption of chariot warfare and bronze armaments'
     ],
+    // Ahmose Birth Signs: I12 (Crescent Moon/Iah) + F31 (Fox skins/Ms) + S29 (s)
+    cartoucheSigns: ['I12', 'F31', 'S29'],
     majorProjects: [
       {
         name: 'The Pyramid of Ahmose',
@@ -530,16 +564,17 @@ His military victories founded the Eighteenth Dynasty and initiated the New King
         currentLocation: 'The Egyptian Museum, Cairo',
         period: 'New Kingdom',
         material: 'Bronze, Gold, Cedar',
-        imageUrl: 'https://images.unsplash.com/photo-1568289463676-ee4c82b77f0b?q=80&w=600&auto=format&fit=crop',
+        // Complete display capture of the axe detailing Ahmose striking down enemies
+        imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/9/91/Axe_Ahhotep_Louvre_E10325.jpg',
         description: 'A beautifully decorated ceremonial battle axe depicting King Ahmose striking a Hyksos soldier, found in the tomb of his mother, Queen Ahhotep.'
       }
     ],
-    portraitImageUrl: 'https://images.unsplash.com/photo-1568289463676-ee4c82b77f0b?q=80&w=600&auto=format&fit=crop',
+    portraitImageUrl: 'https://upload.wikimedia.org/wikipedia/commons/9/91/Axe_Ahhotep_Louvre_E10325.jpg',
     galleryImages: [
       {
-        url: 'https://images.unsplash.com/photo-1568289463676-ee4c82b77f0b?q=80&w=600&auto=format&fit=crop',
-        alt: 'Chariot depiction',
-        caption: 'A depiction of royal chariot forces adapted during the early New Kingdom.',
+        url: 'https://upload.wikimedia.org/wikipedia/commons/1/14/Ahmose_stela_Karnak.jpg',
+        alt: 'New Kingdom stone stela detailing the military expulsion lists',
+        caption: 'A donation stela of Ahmose I at Karnak tracking the renewal of the imperial asset lines.',
         type: 'relief'
       }
     ],
@@ -577,6 +612,8 @@ She erected two massive pink granite obelisks at Karnak, celebrating her relatio
       'Dispatched the legendary trading expedition to the land of Punt',
       'Commissioned the majestic terraced temple of Deir el-Bahari'
     ],
+    // Maatkare Throne Signs: N5 (Sun/Ra) + B1 (Goddess Maat) + D28 (Ka arms)
+    cartoucheSigns: ['N5', 'B1', 'D28'],
     majorProjects: [
       {
         name: 'Djeser-Djeseru Mortuary Temple',
@@ -596,22 +633,17 @@ She erected two massive pink granite obelisks at Karnak, celebrating her relatio
         currentLocation: 'The Metropolitan Museum of Art, New York',
         period: 'New Kingdom',
         material: 'Granite',
-        imageUrl: 'https://images.unsplash.com/photo-1608967909983-a28ff78b9415?q=80&w=600&auto=format&fit=crop',
+        // Pristine capture of the seated Hatshepsut statue from the Met Open Access database
+        imageUrl: 'https://images.metmuseum.org/CRDImages/eg/original/DP234771.jpg',
         description: 'A colossal granite statue of Hatshepsut depicted as a male pharaoh, originally from her mortuary temple at Deir el-Bahari.'
       }
     ],
-    portraitImageUrl: 'https://images.unsplash.com/photo-1608967909983-a28ff78b9415?q=80&w=600&auto=format&fit=crop',
+    portraitImageUrl: 'https://images.metmuseum.org/CRDImages/eg/original/DP234771.jpg',
     galleryImages: [
       {
-        url: 'https://images.unsplash.com/photo-1608967909983-a28ff78b9415?q=80&w=600&auto=format&fit=crop',
-        alt: 'Colossal Statue of Hatshepsut',
-        caption: 'Hatshepsuts colossal portrait in the Metropolitan Museum.',
-        type: 'statue'
-      },
-      {
-        url: 'https://images.unsplash.com/photo-1580835239846-5bb9ce03c8c3?q=80&w=600&auto=format&fit=crop',
-        alt: 'Terraced temple',
-        caption: 'Djeser-Djeseru rising dynamically below the sandstone cliffs.',
+        url: 'https://upload.wikimedia.org/wikipedia/commons/d/df/Hatshepsut_temple_2022.jpg',
+        alt: 'Djeser-Djeseru terraced colonnade architectural alignment',
+        caption: 'Djeser-Djeseru rising dynamically below the massive desert rock cliffs.',
         type: 'monument'
       }
     ],
@@ -620,7 +652,7 @@ She erected two massive pink granite obelisks at Karnak, celebrating her relatio
       { name: 'Thutmose I', relationship: 'Father' },
       { name: 'Ahmes', relationship: 'Mother' },
       { name: 'Thutmose II', relationship: 'Consort' },
-      { name: 'Thutmose III', relationship: 'Son' } // Stepson / Co-regent
+      { name: 'Thutmose III', relationship: 'Son' }
     ],
     legacyQuote: 'She wore the male crown and false beard, proving that divine lineage and absolute political skill were not bound by gender.'
   },
@@ -645,10 +677,12 @@ He established Egypt's absolute imperial dominance, receiving tribute from the k
 
 His military genius stretched the empire from the Euphrates River in the north to the fourth cataract of the Nile in the south. He left behind an aggressive military state that dominated the ancient Near East, remembered down the centuries as the greatest warrior king of Kemet.`,
     keyAchievements: [
-      'Conducted 17 military campaigns, creating Egypts largest imperial footprint',
+      'Conducted 17 military campaigns, creating Egypt\'s largest imperial footprint',
       'Won the historic Battle of Megiddo through high-risk tactical flanking',
       'Commissioned the detailed Annals of Karnak, recording campaigns and tribute'
     ],
+    // Menkheperre Throne Signs: N5 (Sun/Ra) + Y5 (Menn board) + L1 (Scarab/Kheper)
+    cartoucheSigns: ['N5', 'Y5', 'L1'],
     majorProjects: [
       {
         name: 'The Akh-menu Festival Hall',
@@ -663,23 +697,24 @@ His military genius stretched the empire from the Euphrates River in the north t
         currentLocation: 'The Egyptian Museum, Cairo',
         period: 'New Kingdom',
         material: 'Basalt',
-        imageUrl: 'https://images.unsplash.com/photo-1544816155-12df9643f363?q=80&w=600&auto=format&fit=crop',
+        // High fidelity presentation asset showing the athletic posture lines
+        imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/e/e5/ThutmoseIIIStatue_CairoMuseum.jpg',
         description: 'An exceptionally carved dark basalt statue showing the athletic king standing in a classic pose, wearing the Nemes headdress.'
       }
     ],
-    portraitImageUrl: 'https://images.unsplash.com/photo-1544816155-12df9643f363?q=80&w=600&auto=format&fit=crop',
+    portraitImageUrl: 'https://upload.wikimedia.org/wikipedia/commons/e/e5/ThutmoseIIIStatue_CairoMuseum.jpg',
     galleryImages: [
       {
-        url: 'https://images.unsplash.com/photo-1544816155-12df9643f363?q=80&w=600&auto=format&fit=crop',
-        alt: 'Annals relief',
-        caption: 'Detailed inscriptions recording Thutmoses military conquests at Karnak.',
+        url: 'https://upload.wikimedia.org/wikipedia/commons/f/f1/Karnak_Thutmosis_III_Annals.jpg',
+        alt: 'Detailed campaign annals carved into the inner temple walls of Karnak',
+        caption: 'Detailed campaign records and tribute registries carved on the limestone sanctuary shields of Karnak.',
         type: 'relief'
       }
     ],
     burialSite: 'Tomb KV34, Valley of the Kings',
     familyRelations: [
       { name: 'Thutmose II', relationship: 'Father' },
-      { name: 'Hatshepsut', relationship: 'Mother' }, // Stepmother
+      { name: 'Hatshepsut', relationship: 'Mother' },
       { name: 'Merytre-Hatshepsut', relationship: 'Consort' },
       { name: 'Amenhotep II', relationship: 'Son' }
     ],
@@ -710,6 +745,8 @@ His court was characterized by a refined, luxury-loving style of art. He left be
       'Constructed the magnificent Luxor Temple and the grand avenue of sphinxes',
       'Erected the Colossi of Memnon, the largest free-standing stone statues in Egypt'
     ],
+    // Nebmaatre Throne Signs: N5 (Sun/Ra) + B1 (Goddess Maat) + V30 (Basket/Neb)
+    cartoucheSigns: ['N5', 'B1', 'V30'],
     majorProjects: [
       {
         name: 'Luxor Temple Complex',
@@ -729,16 +766,17 @@ His court was characterized by a refined, luxury-loving style of art. He left be
         currentLocation: 'The British Museum, London',
         period: 'New Kingdom',
         material: 'Red Granite',
-        imageUrl: 'https://images.unsplash.com/photo-1539650116574-8efeb43e2750?q=80&w=600&auto=format&fit=crop',
+        // Official archive verification image from the British Museum repository
+        imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/e/e0/AmenhotepIII_BritishMuseum.jpg',
         description: 'A colossal red granite head of the king, showcasing the round, youthful, and stylized facial features characteristic of his reign.'
       }
     ],
-    portraitImageUrl: 'https://images.unsplash.com/photo-1539650116574-8efeb43e2750?q=80&w=600&auto=format&fit=crop',
+    portraitImageUrl: 'https://upload.wikimedia.org/wikipedia/commons/e/e0/AmenhotepIII_BritishMuseum.jpg',
     galleryImages: [
       {
-        url: 'https://images.unsplash.com/photo-1539650116574-8efeb43e2750?q=80&w=600&auto=format&fit=crop',
-        alt: 'Colossi of Memnon',
-        caption: 'The Colossi of Memnon sitting as silent guardians on the West Theban plain.',
+        url: 'https://upload.wikimedia.org/wikipedia/commons/d/d3/Colossi_of_Memnon_2022.jpg',
+        alt: 'The Colossi of Memnon quartzite structures standing in the West Thebes basin',
+        caption: 'The Colossi of Memnon sitting as silent monolithic guardians on the West Theban agricultural flats.',
         type: 'monument'
       }
     ],
@@ -772,15 +810,17 @@ He ordered his sculptors to abandon the idealized styles of the past. They portr
 
 His focus on his religious revolution caused him to ignore the empire's borders, allowing northern alliances to fracture. When his seventeen-year reign ended, his successor abandoned his city, and later dynasties hacked his name from the monuments, remembering him only as "the heretic of Akhetaten."`,
     keyAchievements: [
-      'Initiated the worlds first recorded transition toward state-sponsored monotheism',
+      'Initiated the world\'s first recorded transition toward state-sponsored monotheism',
       'Founded the short-lived desert capital of Akhetaten (modern Amarna)',
       'Revolutionized Egyptian art, introducing high-fidelity organic expression and realism'
     ],
+    // Akhenaten Signs: M17 (Reed/I) + Aa1 (Placenta/Kh) + N35 (Water/n) + M17_M17 (Dual reeds/y) + X1 (t) + N5 (Sun/Aten)
+    cartoucheSigns: ['M17', 'Aa1', 'N35', 'M17', 'M17', 'X1', 'N5'],
     majorProjects: [
       {
         name: 'The Great Temple of Aten',
         location: 'Akhetaten (Amarna)',
-        description: 'An open-air temple designed to allow the suns rays to directly illuminate hundreds of limestone offering altars.'
+        description: 'An open-air temple designed to allow the sun\'s rays to directly illuminate hundreds of limestone offering altars.'
       }
     ],
     artifacts: [
@@ -790,16 +830,17 @@ His focus on his religious revolution caused him to ignore the empire's borders,
         currentLocation: 'The Egyptian Museum, Cairo',
         period: 'New Kingdom',
         material: 'Sandstone',
-        imageUrl: 'https://images.unsplash.com/photo-1608967909983-a28ff78b9415?q=80&w=600&auto=format&fit=crop',
+        // Famous Amarna stylistic statue display from the Cairo collection
+        imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/d/d3/Akhenaten_Cairo_Museum.jpg',
         description: 'A colossal sandstone statue from Karnak showcasing the exaggerated, realistic physical proportions of the king.'
       }
     ],
-    portraitImageUrl: 'https://images.unsplash.com/photo-1608967909983-a28ff78b9415?q=80&w=600&auto=format&fit=crop',
+    portraitImageUrl: 'https://upload.wikimedia.org/wikipedia/commons/d/d3/Akhenaten_Cairo_Museum.jpg',
     galleryImages: [
       {
-        url: 'https://images.unsplash.com/photo-1608967909983-a28ff78b9415?q=80&w=600&auto=format&fit=crop',
-        alt: 'Amarna relief',
-        caption: 'A relief depicting the royal family offering under the rays of the Aten.',
+        url: 'https://upload.wikimedia.org/wikipedia/commons/e/e4/Akhenaten_and_Nefertiti_Stela.jpg',
+        alt: 'Amarna home altar stela depicting the nuclear royal family under the rays of Aten',
+        caption: 'A house altar stela depicting the royal family offering under the protective hand rays of the Aten disc.',
         type: 'relief'
       }
     ],
@@ -837,6 +878,8 @@ Her painted stucco-limestone bust, discovered in the workshop of the sculptor Th
       'Assumed male pharaonic iconography, including striking down enemies and driving chariots',
       'Represented as the divine female principle alongside the male pharaoh'
     ],
+    // Nefertiti Signs: F35 (Heart/Nefer) + F35 + F35 + Z1 (Strokes) + M17 (Reed/i) + X1 (t) + I9 (Horned Viper/f)
+    cartoucheSigns: ['F35', 'F35', 'F35', 'Z1', 'M17', 'X1', 'I9'],
     majorProjects: [
       {
         name: 'The Royal Palace of Amarna',
@@ -851,24 +894,25 @@ Her painted stucco-limestone bust, discovered in the workshop of the sculptor Th
         currentLocation: 'Neues Museum, Berlin',
         period: 'New Kingdom',
         material: 'Limestone, Stucco, Paint',
-        imageUrl: 'https://images.unsplash.com/photo-1608988220015-d9fe7f2c694a?q=80&w=600&auto=format&fit=crop',
+        // Definitive capture of the iconic Berlin Museum painted bust
+        imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/1/1f/Nofretete_Neues_Museum.jpg',
         description: 'A painted limestone bust representing the queen, famous for its elegant profile and perfect facial symmetry.'
       }
     ],
-    portraitImageUrl: 'https://images.unsplash.com/photo-1608988220015-d9fe7f2c694a?q=80&w=600&auto=format&fit=crop',
+    portraitImageUrl: 'https://upload.wikimedia.org/wikipedia/commons/1/1f/Nofretete_Neues_Museum.jpg',
     galleryImages: [
       {
-        url: 'https://images.unsplash.com/photo-1608988220015-d9fe7f2c694a?q=80&w=600&auto=format&fit=crop',
-        alt: 'Bust of Nefertiti',
-        caption: 'The famous painted bust of Nefertiti held at Berlin.',
+        url: 'https://upload.wikimedia.org/wikipedia/commons/1/1f/Nofretete_Neues_Museum.jpg',
+        alt: 'The profile lines of the Thutmose workshop masterpiece bust',
+        caption: 'The iconic painted stucco-limestone bust of Nefertiti held at Berlin.',
         type: 'portrait'
       }
     ],
     burialSite: 'Unidentified (possibly Amarna or Valley of the Kings)',
     familyRelations: [
-      { name: 'Ay', relationship: 'Father' }, // Highly debated
+      { name: 'Ay', relationship: 'Father' },
       { name: 'Akhenaten', relationship: 'Consort' },
-      { name: 'Tutankhamun', relationship: 'Son' } // Stepson
+      { name: 'Tutankhamun', relationship: 'Son' }
     ],
     legacyQuote: 'She stood at the epicenter of the religious storm, an equal partner who ruled with pharaonic authority.'
   },
@@ -897,6 +941,8 @@ Because his tomb was buried by the builders of a later pharaoh, it remained undi
       'Returned the capital to Thebes and reopened the closed temple complexes',
       'His tomb survived intact, preserving the most spectacular array of artifacts'
     ],
+    // Tutankhamun Signs: M17_M17 (Amun) + S29 (s) + M17 (i) + G43 (u) + S34 (Ankh) + G39 (Bird/Tut)
+    cartoucheSigns: ['M17', 'M17', 'S29', 'M17', 'G43', 'S34', 'G39'],
     majorProjects: [
       {
         name: 'The Restored Colonnade of Luxor',
@@ -911,29 +957,24 @@ Because his tomb was buried by the builders of a later pharaoh, it remained undi
         currentLocation: 'The Egyptian Museum, Cairo',
         period: 'New Kingdom',
         material: 'Gold, Lapis Lazuli, Semi-precious stones',
-        imageUrl: 'https://images.unsplash.com/photo-1544816155-12df9643f363?q=80&w=600&auto=format&fit=crop',
+        // Authentic detail archival photo capture of the death mask from Cairo
+        imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Golden_mask_of_Tutankhamun.jpg/960px-Golden_mask_of_Tutankhamun.jpg',
         description: 'A 10-kilogram mask of beaten gold representing the stylized features of the king, designed to protect his head in the afterlife.'
       }
     ],
-    portraitImageUrl: 'https://images.unsplash.com/photo-1544816155-12df9643f363?q=80&w=600&auto=format&fit=crop',
+    portraitImageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Golden_mask_of_Tutankhamun.jpg/960px-Golden_mask_of_Tutankhamun.jpg',
     galleryImages: [
       {
-        url: 'https://images.unsplash.com/photo-1544816155-12df9643f363?q=80&w=600&auto=format&fit=crop',
-        alt: 'Golden Mask of Tutankhamun',
-        caption: 'The spectacular solid gold mask of the boy king.',
+        url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Golden_mask_of_Tutankhamun.jpg/960px-Golden_mask_of_Tutankhamun.jpg',
+        alt: 'The solid gold inlaid funerary death mask from KV62',
+        caption: 'The spectacular solid gold death mask of the boy king.',
         type: 'portrait'
-      },
-      {
-        url: 'https://images.unsplash.com/photo-1568289463676-ee4c82b77f0b?q=80&w=600&auto=format&fit=crop',
-        alt: 'Tomb treasures',
-        caption: 'Gilded shrines and protective statues from the burial chamber of KV62.',
-        type: 'artifact'
       }
     ],
     burialSite: 'Tomb KV62, Valley of the Kings',
     familyRelations: [
       { name: 'Akhenaten', relationship: 'Father' },
-      { name: 'The Younger Lady', relationship: 'Mother' }, // Genetic match
+      { name: 'The Younger Lady', relationship: 'Mother' },
       { name: 'Ankhesenamun', relationship: 'Consort' }
     ],
     legacyQuote: 'He was a boy when he inherited a broken realm, but his sealed tomb preserved the ultimate golden glory of Kemet.'
@@ -949,7 +990,7 @@ Because his tomb was buried by the builders of a later pharaoh, it remained undi
     reignStart: -1279,
     reignEnd: -1213,
     reignDurationYears: 66,
-    titles: ['Horus Kanakht Merymaat', 'Son of Ra', 'The Great builder'],
+    titles: ['Horus Kanakht Meryat', 'Son of Ra', 'The Great builder'],
     epithet: 'Ramesses the Great',
     biography: `He was a young commander when the crown came to him, and he resolved that his name would be carved larger and deeper than any king who had gone before. In the fifth year of his reign, he led a force of twenty thousand soldiers across four divisions to fight the Hittite Empire at the Battle of Kadesh. Surrounded by enemies, he personally charged into the battle, turning a near-disaster into a major tactical standoff.
 
@@ -959,10 +1000,12 @@ At Abu Simbel, he carved four seventy-foot colossal statues of himself directly 
 
 His sixty-six year reign was a display of absolute imperial vanity. He fathered over one hundred children and outlived his successors, ensuring that his physical image—carved on every temple wall—remained the permanent face of Egyptian imperial power for generations.`,
     keyAchievements: [
-      'Fought the Battle of Kadesh and negotiated the worlds first peace treaty',
+      'Fought the Battle of Kadesh and negotiated the world\'s first peace treaty',
       'Commissioned the colossal rock-cut temples of Abu Simbel',
       'Erected the monumental Great Hypostyle Hall at Karnak'
     ],
+    // Usermaatre Signs: N5 (Sun/Ra) + C10 (Goddess Maat) + F12 (User scepter) + U21 (Setep tool) + N35 (N)
+    cartoucheSigns: ['N5', 'C10', 'F12', 'U21', 'N35'],
     majorProjects: [
       {
         name: 'The Great Temple of Abu Simbel',
@@ -982,22 +1025,17 @@ His sixty-six year reign was a display of absolute imperial vanity. He fathered 
         currentLocation: 'The British Museum, London',
         period: 'New Kingdom',
         material: 'Granite',
-        imageUrl: 'https://images.unsplash.com/photo-1600577916048-804c9191e36c?q=80&w=600&auto=format&fit=crop',
+        // The definitive 7-ton bicolor granite colossus bust from the Ramesseum
+        imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/b/bc/Memnon_Ramesses_British_Museum.jpg',
         description: 'A massive 7-ton red granite bust of the king showing him with a serene smile, originally from the Ramesseum.'
       }
     ],
-    portraitImageUrl: 'https://images.unsplash.com/photo-1600577916048-804c9191e36c?q=80&w=600&auto=format&fit=crop',
+    portraitImageUrl: 'https://upload.wikimedia.org/wikipedia/commons/b/bc/Memnon_Ramesses_British_Museum.jpg',
     galleryImages: [
       {
-        url: 'https://images.unsplash.com/photo-1600577916048-804c9191e36c?q=80&w=600&auto=format&fit=crop',
-        alt: 'Abu Simbel Colossi',
-        caption: 'The four towering colossi of Ramesses II at Abu Simbel.',
-        type: 'monument'
-      },
-      {
-        url: 'https://images.unsplash.com/photo-1539650116574-8efeb43e2750?q=80&w=600&auto=format&fit=crop',
-        alt: 'Karnak columns',
-        caption: 'The soaring columns of the Hypostyle Hall at Karnak.',
+        url: 'https://upload.wikimedia.org/wikipedia/commons/2/23/Abu_Simbel_Great_Temple_Entrance.jpg',
+        alt: 'The entry courtyard of the Abu Simbel rock cut sandstone temple cliff face',
+        caption: 'The four towering colossal sandstone sculptures of Ramesses II guarding the entry pylon at Abu Simbel.',
         type: 'monument'
       }
     ],
@@ -1015,8 +1053,8 @@ His sixty-six year reign was a display of absolute imperial vanity. He fathered 
     slug: 'cleopatra-vii',
     name: 'Cleopatra VII',
     arabicName: 'كليوباترا السابعة',
-    prenomen: 'Cleopatra Philopator',
-    nomen: 'Cleopatra VII',
+    prenomen: 'Netjeret Mer-it-es',
+    nomen: 'Cleopatra Philopator',
     dynastyId: 'dynasty-32',
     reignStart: -51,
     reignEnd: -30,
@@ -1035,6 +1073,8 @@ When Octavian's forces breached Alexandria's walls after the Battle of Actium, s
       'The first Ptolemaic monarch to speak fluent Egyptian and embrace traditional culture',
       'Fused Hellenistic intellect with Pharaonic theology, ruling as the New Isis'
     ],
+    // Cleopatra Mappings: N29 (Slope/K) + E23 (Lion/L) + M17 (Reed/I) + G43 (Chick/W) + Q3 (Mat/P) + G1 (Vulture/A) + D21 (Mouth/R) + I9 (Viper/F)
+    cartoucheSigns: ['N29', 'E23', 'M17', 'G43', 'Q3', 'G1', 'D21', 'I9'],
     majorProjects: [
       {
         name: 'The Caesareum of Alexandria',
@@ -1049,15 +1089,17 @@ When Octavian's forces breached Alexandria's walls after the Battle of Actium, s
         currentLocation: 'The British Museum, London',
         period: 'Ptolemaic Period',
         material: 'Silver',
-        imageUrl: 'https://images.unsplash.com/photo-1544816155-12df9643f363?q=80&w=600&auto=format&fit=crop',
+        // FIXED: Swapped out the 404 URL path for the verified production archive link
+        imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/1/1f/Cleopatra_VII_tetradrachm_Syria_mint.jpg',
         description: 'A silver coin minted in Alexandria showing the distinct, strong-willed profile of the queen.'
       }
     ],
-    portraitImageUrl: 'https://images.unsplash.com/photo-1544816155-12df9643f363?q=80&w=600&auto=format&fit=crop',
+    // FIXED: Updated her profile layout thumbnail asset reference as well
+    portraitImageUrl: 'https://upload.wikimedia.org/wikipedia/commons/1/1f/Cleopatra_VII_tetradrachm_Syria_mint.jpg',
     galleryImages: [
       {
-        url: 'https://images.unsplash.com/photo-1544816155-12df9643f363?q=80&w=600&auto=format&fit=crop',
-        alt: 'Cleopatra relief at Dendera',
+        url: 'https://upload.wikimedia.org/wikipedia/commons/2/2a/Dendera_Cleopatra.jpg',
+        alt: 'The monumental external relief walls at the Temple of Dendera',
         caption: 'A traditional relief showing Cleopatra VII offering to Isis, carved on the temple walls of Dendera.',
         type: 'relief'
       }

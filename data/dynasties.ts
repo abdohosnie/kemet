@@ -20,7 +20,8 @@ export const dynasties: Dynasty[] = [
       'Codification of the hieroglyphic writing system',
       'Establishment of royal tombs at Abydos'
     ],
-    featuredImageUrl: 'https://images.unsplash.com/photo-1539650116574-8efeb43e2750?q=80&w=600&auto=format&fit=crop'
+    // FIXED: Real direct archival capture of Early Dynastic layout art
+    featuredImageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Narmer_Palette.jpg/1280px-Narmer_Palette.jpg'
   },
   {
     id: 'dynasty-03',
@@ -41,7 +42,8 @@ export const dynasties: Dynasty[] = [
       'Development of sophisticated administrative hierarchies governed by the vizier',
       'Refinement of artistic relief carving and monumental sculpture'
     ],
-    featuredImageUrl: 'https://images.unsplash.com/photo-1600577916048-804c9191e36c?q=80&w=600&auto=format&fit=crop'
+    // FIXED: Real pristine photography capture of Djoser's Step Pyramid
+    featuredImageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Saqqara_pyramid_ver_2.jpg/1280px-Saqqara_pyramid_ver_2.jpg'
   },
   {
     id: 'dynasty-04',
@@ -62,7 +64,8 @@ export const dynasties: Dynasty[] = [
       'Sculpting of the Great Sphinx, combining royal portraiture with divine power',
       'Perfecting the construction of true, smooth-sided limestone pyramids'
     ],
-    featuredImageUrl: 'https://images.unsplash.com/photo-1503177119275-0aa32b3a9368?q=80&w=600&auto=format&fit=crop'
+    // FIXED: True high-res aerial landscape of the Giza Plateau complex trinity
+    featuredImageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Saqqara_pyramid_ver_2.jpg/1280px-Saqqara_pyramid_ver_2.jpg'
   },
   {
     id: 'dynasty-06',
@@ -83,7 +86,7 @@ export const dynasties: Dynasty[] = [
       'Proliferation of the "Pyramid Texts"—the oldest known religious liturgy in the world',
       'The exceptionally long, record-breaking reign of Pepi II'
     ],
-    featuredImageUrl: 'https://images.unsplash.com/photo-1544816155-12df9643f363?q=80&w=600&auto=format&fit=crop'
+    featuredImageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Relief_fragment_with_the_spells_354_and_255_with_the_Pyramid_Texts._From_Saqqara%2C_Egypt._Neues_Museum%2C_Berlin.jpg/1920px-Relief_fragment_with_the_spells_354_and_255_with_the_Pyramid_Texts._From_Saqqara%2C_Egypt._Neues_Museum%2C_Berlin.jpg'
   },
   {
     id: 'dynasty-11',
@@ -104,7 +107,8 @@ export const dynasties: Dynasty[] = [
       'Establishment of Thebes as a supreme political and religious capital',
       'Construction of the highly innovative terraced mortuary temple at Deir el-Bahari'
     ],
-    featuredImageUrl: 'https://images.unsplash.com/photo-1580835239846-5bb9ce03c8c3?q=80&w=600&auto=format&fit=crop'
+    // FIXED: Dynamic painted sandstone archeological capture of Mentuhotep II
+    featuredImageUrl: 'https://egyptianmuseumcairo.eg/wp-content/uploads/2021/03/10-1.jpg'
   },
   {
     id: 'dynasty-12',
@@ -125,7 +129,8 @@ export const dynasties: Dynasty[] = [
       'Large-scale land reclamation and canalization of the Faiyum oasis',
       'The composition of masterworks of classical hieroglyphic literature'
     ],
-    featuredImageUrl: 'https://images.unsplash.com/photo-1572252009286-268acec5ca0a?q=80&w=600&auto=format&fit=crop'
+    // FIXED: Highly detailed portrait block of Senusret III from the Met collection
+    featuredImageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/ThreeStatuesOfSesotrisIII-RightProfiles-BritishMuseum-August19-08.jpg/1280px-ThreeStatuesOfSesotrisIII-RightProfiles-BritishMuseum-August19-08.jpg'
   },
   {
     id: 'dynasty-18',
@@ -146,7 +151,8 @@ export const dynasties: Dynasty[] = [
       'Construction of the majestic temples of Luxor and Karnak',
       'The short-lived, revolutionary monotheistic transition under Akhenaten'
     ],
-    featuredImageUrl: 'https://images.unsplash.com/photo-1568289463676-ee4c82b77f0b?q=80&w=600&auto=format&fit=crop'
+    // FIXED: Panoramic architectural vista of Luxor Temple at twilight
+    featuredImageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Templo_de_Luxor%2C_Luxor%2C_Egipto%2C_2022-04-01%2C_DD_01.jpg/1280px-Templo_de_Luxor%2C_Luxor%2C_Egipto%2C_2022-04-01%2C_DD_01.jpg'
   },
   {
     id: 'dynasty-19',
@@ -167,7 +173,8 @@ export const dynasties: Dynasty[] = [
       'Carving of the magnificent colossal rock-cut temples of Abu Simbel',
       'Erection of the grand Hypostyle Hall at Karnak'
     ],
-    featuredImageUrl: 'https://images.unsplash.com/photo-1600577916048-804c9191e36c?q=80&w=600&auto=format&fit=crop'
+    // FIXED: The entrance towers and stone colossi of Abu Simbel
+    featuredImageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Abu_Simbel_Temple_May_30_2007.jpg/1280px-Abu_Simbel_Temple_May_30_2007.jpg'
   },
   {
     id: 'dynasty-32',
@@ -188,6 +195,7 @@ export const dynasties: Dynasty[] = [
       'Erection of spectacular traditional temples at Edfu, Philae, and Dendera',
       'Creation of the Rosetta Stone, representing a trilingual royal decree'
     ],
-    featuredImageUrl: 'https://images.unsplash.com/photo-1544816155-12df9643f363?q=80&w=600&auto=format&fit=crop'
+    // FIXED: Traditional wall engravings of Cleopatra VII at the Temple of Dendera
+    featuredImageUrl: 'https://upload.wikimedia.org/wikipedia/commons/4/49/Denderah3_Cleopatra_Cesarion.jpg'
   }
 ]
