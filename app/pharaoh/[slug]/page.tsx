@@ -91,7 +91,12 @@ async function PharaohPageContent({ slug }: { slug: string }) {
             {/* Cartouche Callout & Pull Quote */}
             <SectionReveal className="my-6 grid grid-cols-1 md:grid-cols-12 gap-6 items-center p-6 border border-dust/50 bg-chamber/40 rounded-[2px]">
               <div className="md:col-span-4 flex justify-center">
-                <CartoucheDisplay prenomen={pharaoh.prenomen} name={pharaoh.name} />
+                {/* FIXED: Replaced invalid name prop with nomen and id properties */}
+                <CartoucheDisplay
+                  prenomen={pharaoh.prenomen}
+                  nomen={pharaoh.nomen}
+                  id={pharaoh.id}
+                />
               </div>
               <div className="md:col-span-8 border-l border-dust/35 pl-0 md:pl-6 flex flex-col gap-3">
                 <span className="font-sc-custom text-[10px] text-text-muted tracking-wider">
